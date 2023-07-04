@@ -1,12 +1,11 @@
 * {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
 }
 
 html {
-    background-color: red;
     height: 100%;
 }
 
@@ -20,11 +19,11 @@ body {
 
 #gridContainer {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     flex: 0 1 800px;
     max-width: 100%;
     aspect-ratio: 1;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 #grid {
