@@ -6,15 +6,28 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Etch-a-Sketch</h1>
+        <h1 id="header">Etch-a-Sketch</h1>
         <div id="gridContainer">
             <div id="grid"></div>
         </div>
-        <h2>Canvas width/height: <span id="gridSizeDisplay">8</span> pixels</h2>
-        <input id="gridSize" type="number">
-        <button id ="draw">Draw</button>
-        <button id="erase">Erase</button>
-        <button id="clearCanvas">Clear canvas</button>
+        <div id="settings">
+            <div id="canvasSettings">
+                <h2>Canvas</h2>
+                <p>Canvas size: <span id="gridSizeDisplay">8</span> pixels</p>
+                <input id="gridSize" type="number" placeholder="Enter a value from 2 to 128">
+                <button id="clearCanvas">Clear canvas</button>
+                <h3>Color</h3>
+                <input id="gridBackgroundColor" type="color">
+            </div>
+            <div id="penSettings">
+                <h2>Pen</h2>
+                <button id ="draw" class="pressed">Draw</button>
+                <button id="erase">Erase</button>
+                <button id="unicornPenColor">Unicorn</button>
+                <h3>Color</h3>
+                <input id="penColor" type="color">
+            </div>
+        </div>
     </body>
     <script src="javascript.js"></script>
 </html>
